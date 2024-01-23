@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Fuck",
+  "description": "How can we fuck up UX? Lets find out",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/script.js"],
+      "matches": ["<all_urls>"],
+      "css": ["styles/injected.css"]
+    }
+  ]
+}
